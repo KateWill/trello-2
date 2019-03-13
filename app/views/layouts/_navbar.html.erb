@@ -1,8 +1,12 @@
 <nav>
-
+<div class="ui menu">
+  <div class="header item">
+  <a href="#">Trello Clone</a>
+</div>
   <ul>
-  <li> <%= link_to "Home", boards_path %> </li> 
-</ul>
-
-<%= button_to "Log Out", destroy_user_session_path, method: :delete %>
+    <li class="item"><%= link_to 'Home', root_path %></li>
+    <li class="item"><%= link_to 'My Boards', boards_path %></li>
+    <li class="item"><%= link_to 'Create Board', new_board_path %></li>
+  </ul>
+</div>
 </nav>
