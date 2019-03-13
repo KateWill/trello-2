@@ -1,2 +1,15 @@
-<h1>Boards#new</h1>
-<p>Find me in app/views/boards/new.html.erb</p>
+<h4>Create a New Board</h4>
+
+<%= form_with(model: @board, local: true ) do |f| %>
+
+<div class="field">
+  <%= f.label :name, 'Board Name' %>
+  <%= f.text_field :name, required: true %>
+</div>
+<br>
+<div class="div">
+  <%= f.submit nil %>
+</div>
+<% end %>
+
+

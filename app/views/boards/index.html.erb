@@ -1,2 +1,12 @@
-<h1>Boards#index</h1>
-<p>Find me in app/views/boards/index.html.erb</p>
+<h3>Welcome to Trello Clone!</h3>
+
+<%= link_to "Add a Board", new_board_path %>
+
+<h4>Select a Board:</h4>
+
+<ul>
+  <% @boards.each do |board| %>
+  <li><%= board.name %></li>
+  <% end %>
+
+</ul>

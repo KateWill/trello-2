@@ -2,8 +2,8 @@
 
 one:
   name: MyString
-  boards: one
+  board: one
 
 two:
   name: MyString
-  boards: two
+  board: two
