@@ -1,7 +1,19 @@
 <h1>My Lists</h1>
 
+<form action="/action_page.php" id="usrform">
+  Title: <input type="text" name="usrname">
 
-<p>Title: <%= @list['title']%></p>
-<p>Description: <%= @list['description']%></p>
+</form>
 
-<%= link_to "Back To My Boards",boards_path%>
+
+<p>Description:</p>
+  <textarea rows="4" cols="50" name="comment" form="usrform">
+  Enter text here...</textarea>
+  <br>
+  <button type="save list" value="Save List">Save List</button>
+<br>
+<br>
+
+<%= link_to "Back To My Boards", boards_path%>
+
+
