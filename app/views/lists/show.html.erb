@@ -1,2 +1,7 @@
-<h1>Lists#show</h1>
-<p>Find me in app/views/lists/show.html.erb</p>
+<h1>My Lists</h1>
+
+
+<p>Title: <%= @list['title']%></p>
+<p>Description: <%= @list['description']%></p>
+
+<%= link_to "Back To My Boards",boards_path%>
