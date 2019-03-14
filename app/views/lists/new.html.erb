@@ -1,2 +1,12 @@
-<h1>Lists#new</h1>
-<p>Find me in app/views/lists/new.html.erb</p>
+<h1><%= @board.name %></h1>
+<br>
+
+<p>Create a new list:</p>
+<br>
+<%= form_with(model: [@board, @list], local: true) do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name, required: true %>
+
+  <%= f.submit %>
+
+  <% end %>

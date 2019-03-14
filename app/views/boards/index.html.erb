@@ -4,6 +4,8 @@
 
 <h3>My Boards</h3>
 
+<%= link_to "Add Board", new_board_path %>
+
 <% @boards.each do |b| %>
   <ul>
     <li><%= link_to b.name, board_path(b) %>  |  <%= link_to 'Edit Board Title', edit_board_path(b) %>  |  <%= link_to "Delete Board", b, method: :delete  %></li>
